@@ -1,0 +1,18 @@
+{
+  "name": "ase-swatches",
+  "version": "0.0.1",
+  "description": "Adobe ASE to Procreate Swatches converter",
+  "main": "ase2swatches.js",
+  "dependencies": {
+    "adm-zip": "^0.4.4",
+    "adobe-swatch-exchange": "^0.0.0",
+    "onecolor": "^2.4.2",
+    "parse-color": "^1.0.0"
+  },
+  "devDependencies": {},
+  "author": "@naorunaoru",
+  "license": "WTFPL",
+  "bin": {
+    "ase2swatches": "ase2swatches.js"
+  }
+}
