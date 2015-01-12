@@ -17,10 +17,10 @@ filenames.forEach(function(filename){
         var targetFileName = filename.substr(0, filename.lastIndexOf(".")) + '.swatches';
         fs.writeFile(process.cwd() + '/' + targetFileName, new Buffer(ase2swatches(data, filename)), function(err) {
           if (err) {
-            console.log('SHEIT');
+            console.log('Something\'s wrong:', filename);
           }
           else {
-            console.log('SUCCESS!');
+            console.log('Done converting:', filename);
           }
         });
       });
