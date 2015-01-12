@@ -2,8 +2,8 @@ var ase = require('adobe-swatch-exchange');
 var admZip = require('adm-zip');
 var one = require('onecolor');
 
-var ase2swatches = function(stream, filename) {
-  var extractedData = ase.decode(stream);
+var ase2swatches = function(buffer, filename) {
+  var extractedData = ase.decode(buffer);
 
   var swatches = [];
 
