@@ -13,6 +13,6 @@
   "author": "@naorunaoru",
   "license": "WTFPL",
   "bin": {
-    "ase2swatches": "script.js"
+    "ase2swatches": "cli-tool.js"
   }
 }

@@ -8,7 +8,10 @@ var ase2swatches = function(stream, filename) {
   var swatches = [];
 
   extractedData.colors.forEach(function(item) {
-    var parsedColor = one([item.model, item.color[0], item.color[1], item.color[2], item.color[3]]).hsv();
+    color = item.color.splice(0);
+
+    color.unshift(item.model);
+    var parsedColor = one(color).hsv();
 
     swatches.push({
       hue: parsedColor._hue,
